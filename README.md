@@ -5,3 +5,11 @@ Some commands that I use repeatedly
 ```shell
 find <src> -type f | wc -l
 ```
+
+* copy certain files/types of files while also keep the directory structure
+
+copy all jpg files in the example; 
+```shell
+ find <src> -name '*.jpg' -exec cp --parents \{\} <dst> \;
+```
+
