@@ -18,3 +18,7 @@ find <src> -name '*.jpg' -exec cp --parents \{\} <dst> \;
 find <src> -type d -empty -print -delete
 ```
 
+* choose and move random files
+```shell
+ls <src> | shuf -n 2000 | xargs -i mv {} <dst>
+```
